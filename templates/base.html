@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% block cssLink %}
+    <link rel="stylesheet" href="../static/css/style.css">
+    {% endblock cssLink %}
+</head>
+<body>
+        <nav id="navbar">
+        <ul id="ul">
+            <li> <img src="../static/images/logo.ico" alt="logo"></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+        <div id="buttonsContainer">
+            <input type="text", placeholder="Search" id="search">
+            <button class="btn">Sign Up</button>
+            <button class="btn">Sign In</button>
+        </div>
+    </nav>
+
+    {% if messages %}
+        {% for message in messages %}
+    <div class="shoe">
+    {{ message.tags }}
+    {{ message }}
+    </div>
+        {% endfor %}
+    {% endif %}
+
+    {% block body %}{% endblock body %}
+</body>
+</html>

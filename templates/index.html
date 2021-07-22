@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block title %}Ice-Cream Store{% endblock title %}
+{% block cssLink %}
+    <link rel="stylesheet" href="../static/css/style.css">
+{% endblock cssLink %}
+{% block body %}
+    <div class="content">
+    </div>
+    <div class="products-Section">
+        <h1>Select from our range of Ice-Creams</h1>
+        <div class="products">
+        <div class="card">
+            <img src="../static/images/product-1.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-2.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-3.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-1.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-2.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-3.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-1.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../static/images/product-2.jpg" alt="products">
+          <div class="product-info">
+            <h2>Vanilla IceCream</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        
+                    
+        </div>
+    </div>
+    logged in user
+    welcome {{request.user}}
+    <p>log in </p>
+    <a href="/logout">logout</a>
+{% endblock body %}
